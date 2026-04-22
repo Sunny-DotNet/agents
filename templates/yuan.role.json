@@ -2,7 +2,7 @@
   "schema": "openstaff.role-sync.v2",
   "notes": "Exported from the current application database. MCPs and skills are key-only references.",
   "id": "25BD5A37-F4DC-46E9-A98B-E3FDF761921D",
-  "name": "yuan",
+  "name": "Yuan",
   "job": "code_reviewer",
   "description": "Excels at identifying code defects, explaining issues clearly, and proposing practical fixes.",
   "avatar": "https://cdn.open-hub.cc/agents/yuan.png",
