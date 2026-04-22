@@ -126,7 +126,7 @@
             return `
               <article class="card">
                 <div class="name">${escapeHtml(t.name || "")}</div>
-                <div class="job">${escapeHtml(t.jobTitle || "")}</div>
+                <div class="job">${escapeHtml(t.jobTitle || t.job || "")}</div>
                 <div class="line"><span class="pill">${escapeHtml(t.source || "")}</span></div>
                 <div class="line"><strong>Model:</strong> ${escapeHtml(t.model || "")}</div>
                 <div class="line"><strong>File:</strong> <a href="templates/${encodeURIComponent(t.file)}">${escapeHtml(t.file || "")}</a></div>
@@ -152,6 +152,7 @@
             t.file,
             t.name,
             t.jobTitle,
+            t.job,
             t.model,
             t.source,
             ...(soul.traits || []),

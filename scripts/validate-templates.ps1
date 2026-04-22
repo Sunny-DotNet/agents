@@ -2,6 +2,8 @@ $ErrorActionPreference = "Stop"
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $templatesDir = Join-Path $repoRoot "templates"
+$jobTitlesPath = Join-Path $repoRoot "jobTitle.json"
+$requiredLocales = @("en", "zh", "ja", "fr", "es", "de")
 $errors = New-Object System.Collections.Generic.List[string]
 
 function Add-ValidationError {
@@ -23,6 +25,74 @@ function Read-JsonFile {
         Add-ValidationError "Invalid JSON in file: $path. $($_.Exception.Message)"
         return $null
     }
+}
+
+function Get-JobTitleKeySet {
+    param([string]$path)
+
+    $set = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::Ordinal)
+    $entriesRaw = Read-JsonFile -path $path
+    if ($null -eq $entriesRaw) {
+        return $set
+    }
+
+    $entries = @($entriesRaw)
+    if ($entries.Count -eq 0) {
+        Add-ValidationError "jobTitle.json must not be empty."
+        return $set
+    }
+
+    $keys = New-Object System.Collections.Generic.List[string]
+    foreach ($entry in $entries) {
+        if ($null -eq $entry) {
+            Add-ValidationError "jobTitle.json contains a null item."
+            continue
+        }
+
+        $props = @($entry.PSObject.Properties.Name)
+        if (-not ($props -contains "key")) {
+            Add-ValidationError "jobTitle.json contains an item without 'key'."
+            continue
+        }
+        if (-not ($props -contains "aliases")) {
+            Add-ValidationError "jobTitle.json item '$($entry.key)' is missing 'aliases'."
+            continue
+        }
+
+        $key = [string]$entry.key
+        if ([string]::IsNullOrWhiteSpace($key)) {
+            Add-ValidationError "jobTitle.json contains an empty key."
+            continue
+        }
+        $keys.Add($key)
+
+        if ($null -eq $entry.aliases) {
+            Add-ValidationError "jobTitle.json item '$key' has null aliases."
+            continue
+        }
+
+        $aliasProps = @($entry.aliases.PSObject.Properties.Name)
+        foreach ($locale in $requiredLocales) {
+            if (-not ($aliasProps -contains $locale)) {
+                Add-ValidationError "jobTitle.json item '$key' is missing locale '$locale'."
+                continue
+            }
+            $label = [string]$entry.aliases.$locale
+            if ([string]::IsNullOrWhiteSpace($label)) {
+                Add-ValidationError "jobTitle.json item '$key' has empty alias for locale '$locale'."
+            }
+        }
+        if (-not $set.Add($key)) {
+            Add-ValidationError "jobTitle.json has duplicate key '$key'."
+        }
+    }
+
+    $sortedKeys = @($keys | Sort-Object)
+    if ([string]::Join("|", $keys) -ne [string]::Join("|", $sortedKeys)) {
+        Add-ValidationError "jobTitle.json must be sorted by key."
+    }
+
+    return $set
 }
 
 function Validate-SoulKeys {
@@ -54,6 +124,7 @@ function Validate-SoulKeys {
     } else {
         $values = @($value)
     }
+
     $duplicates = $values | Group-Object | Where-Object { $_.Count -gt 1 } | Select-Object -ExpandProperty Name
     foreach ($duplicate in $duplicates) {
         Add-ValidationError "'$fileName' soul.$fieldName contains duplicate key '$duplicate'."
@@ -66,6 +137,8 @@ function Validate-SoulKeys {
         }
     }
 }
+
+$validJobTitles = Get-JobTitleKeySet -path $jobTitlesPath
 
 if (-not (Test-Path -LiteralPath $templatesDir)) {
     Add-ValidationError "Missing templates directory: $templatesDir"
@@ -80,7 +153,7 @@ if (-not (Test-Path -LiteralPath $templatesDir)) {
         "schema",
         "id",
         "name",
-        "jobTitle",
+        "job",
         "description",
         "avatar",
         "model",
@@ -116,6 +189,16 @@ if (-not (Test-Path -LiteralPath $templatesDir)) {
         $idValue = [string]$template.id
         if (-not [guid]::TryParse($idValue, [ref]$parsedGuid)) {
             Add-ValidationError "'$fileName' has invalid GUID id '$idValue'."
+        }
+
+        if ([string]::IsNullOrWhiteSpace([string]$template.job)) {
+            Add-ValidationError "'$fileName' has empty job."
+        } elseif ($validJobTitles.Count -gt 0 -and -not $validJobTitles.Contains([string]$template.job)) {
+            Add-ValidationError "'$fileName' job '$($template.job)' is not defined in jobTitle.json key."
+        }
+
+        if ($template.description -isnot [string]) {
+            Add-ValidationError "'$fileName' field 'description' must be a string."
         }
 
         if ($template.source -notin @("builtin", "custom")) {

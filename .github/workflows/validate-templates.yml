@@ -4,11 +4,13 @@ on:
   push:
     paths:
       - "templates/**"
+      - "jobTitle.json"
       - "scripts/validate-templates.ps1"
       - ".github/workflows/validate-templates.yml"
   pull_request:
     paths:
       - "templates/**"
+      - "jobTitle.json"
       - "scripts/validate-templates.ps1"
       - ".github/workflows/validate-templates.yml"
 

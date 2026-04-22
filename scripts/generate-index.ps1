@@ -2,13 +2,28 @@ $ErrorActionPreference = "Stop"
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $templatesDir = Join-Path $repoRoot "templates"
+$jobTitlesPath = Join-Path $repoRoot "jobTitle.json"
 $outputPath = Join-Path $repoRoot "index.json"
 
 if (-not (Test-Path -LiteralPath $templatesDir)) {
     throw "Templates directory not found: $templatesDir"
 }
+if (-not (Test-Path -LiteralPath $jobTitlesPath)) {
+    throw "Job title dictionary not found: $jobTitlesPath"
+}
 
 $templateFiles = Get-ChildItem -LiteralPath $templatesDir -Filter "*.role.json" | Sort-Object Name
+$jobTitles = Get-Content -LiteralPath $jobTitlesPath -Raw | ConvertFrom-Json -Depth 100
+$jobTitleMap = @{}
+foreach ($entry in @($jobTitles)) {
+    if ($null -ne $entry -and $null -ne $entry.aliases) {
+        $key = [string]$entry.key
+        $en = [string]$entry.aliases.en
+        if (-not [string]::IsNullOrWhiteSpace($key) -and -not [string]::IsNullOrWhiteSpace($en)) {
+            $jobTitleMap[$key] = $en
+        }
+    }
+}
 
 $templates = foreach ($file in $templateFiles) {
     $template = Get-Content -LiteralPath $file.FullName -Raw | ConvertFrom-Json -Depth 100
@@ -26,7 +41,9 @@ $templates = foreach ($file in $templateFiles) {
         file = $file.Name
         id = $template.id
         name = $template.name
-        jobTitle = $template.jobTitle
+        job = $template.job
+        jobTitleKey = $template.job
+        jobTitle = $(if ($jobTitleMap.ContainsKey([string]$template.job)) { $jobTitleMap[[string]$template.job] } else { $null })
         description = $template.description
         model = $template.model
         source = $template.source

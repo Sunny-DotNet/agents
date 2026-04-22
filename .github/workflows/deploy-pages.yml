@@ -7,6 +7,7 @@ on:
     paths:
       - "index.html"
       - "index.json"
+      - "jobTitle.json"
       - "templates/**"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
@@ -36,6 +37,7 @@ jobs:
           mkdir -p site/templates
           cp index.html site/
           cp index.json site/
+          cp jobTitle.json site/
           cp templates/*.role.json site/templates/
           touch site/.nojekyll
 

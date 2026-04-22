@@ -13,6 +13,7 @@ templates/                       # agent templates
 scripts/
   validate-templates.ps1         # template validation
   generate-index.ps1             # generate index.json
+jobTitle.json                    # job dictionary
 index.json                       # generated template index
 index.html                       # pages UI
 .github/workflows/
@@ -27,6 +28,26 @@ index.html                       # pages UI
 pwsh -File .\scripts\validate-templates.ps1
 pwsh -File .\scripts\generate-index.ps1
 ```
+
+### Job title dictionary
+
+`jobTitle.json` follows the `agent_souls` dictionary shape:
+
+```json
+{
+  "key": "snake_case_identifier",
+  "aliases": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch"
+  }
+}
+```
+
+Template `job` values must use the dictionary `key`.
 
 ---
 
@@ -43,6 +64,7 @@ templates/                       # 智能体模板
 scripts/
   validate-templates.ps1         # 模板校验
   generate-index.ps1             # 生成 index.json
+jobTitle.json                    # job 字典
 index.json                       # 自动生成的模板索引
 index.html                       # Pages 展示页面
 .github/workflows/
@@ -57,6 +79,10 @@ index.html                       # Pages 展示页面
 pwsh -File .\scripts\validate-templates.ps1
 pwsh -File .\scripts\generate-index.ps1
 ```
+
+### job 字典
+
+`jobTitle.json` 采用与 `agent_souls` 一致的数据结构（`key + aliases`，6 语种），模板中的 `job` 必须使用该字典的 `key`。
 
 ---
 
@@ -73,6 +99,7 @@ templates/                       # エージェントテンプレート
 scripts/
   validate-templates.ps1         # テンプレート検証
   generate-index.ps1             # index.json 生成
+jobTitle.json                    # job 辞書
 index.json                       # 生成されるテンプレート索引
 index.html                       # Pages UI
 .github/workflows/
@@ -87,6 +114,10 @@ index.html                       # Pages UI
 pwsh -File .\scripts\validate-templates.ps1
 pwsh -File .\scripts\generate-index.ps1
 ```
+
+### job 辞書
+
+`jobTitle.json` は `agent_souls` と同じ辞書形式（`key + aliases`、6言語）を使用します。テンプレートの `job` はこの辞書の `key` を使います。
 
 ---
 
@@ -103,6 +134,7 @@ templates/                       # modèles d'agents
 scripts/
   validate-templates.ps1         # validation des modèles
   generate-index.ps1             # génération de index.json
+jobTitle.json                    # dictionnaire des jobs
 index.json                       # index généré
 index.html                       # interface Pages
 .github/workflows/
@@ -117,3 +149,7 @@ index.html                       # interface Pages
 pwsh -File .\scripts\validate-templates.ps1
 pwsh -File .\scripts\generate-index.ps1
 ```
+
+### Dictionnaire job
+
+`jobTitle.json` suit le même format que `agent_souls` (`key + aliases`, 6 langues). Les valeurs `job` dans les templates doivent utiliser la `key` de ce dictionnaire.

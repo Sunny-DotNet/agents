@@ -1,0 +1,422 @@
+[
+  {
+    "key": "account_executive",
+    "aliases": { "en": "Account Executive", "zh": "客户执行经理", "ja": "Account Executive", "fr": "Account Executive", "es": "Account Executive", "de": "Account Executive" }
+  },
+  {
+    "key": "account_manager",
+    "aliases": { "en": "Account Manager", "zh": "客户经理", "ja": "Account Manager", "fr": "Account Manager", "es": "Account Manager", "de": "Account Manager" }
+  },
+  {
+    "key": "accountant",
+    "aliases": { "en": "Accountant", "zh": "会计", "ja": "Accountant", "fr": "Accountant", "es": "Accountant", "de": "Accountant" }
+  },
+  {
+    "key": "administrative_assistant",
+    "aliases": { "en": "Administrative Assistant", "zh": "行政助理", "ja": "Administrative Assistant", "fr": "Administrative Assistant", "es": "Administrative Assistant", "de": "Administrative Assistant" }
+  },
+  {
+    "key": "ai_engineer",
+    "aliases": { "en": "AI Engineer", "zh": "人工智能工程师", "ja": "AI Engineer", "fr": "AI Engineer", "es": "AI Engineer", "de": "AI Engineer" }
+  },
+  {
+    "key": "android_engineer",
+    "aliases": { "en": "Android Engineer", "zh": "Android工程师", "ja": "Android Engineer", "fr": "Android Engineer", "es": "Android Engineer", "de": "Android Engineer" }
+  },
+  {
+    "key": "art_director",
+    "aliases": { "en": "Art Director", "zh": "艺术总监", "ja": "Art Director", "fr": "Art Director", "es": "Art Director", "de": "Art Director" }
+  },
+  {
+    "key": "backend_engineer",
+    "aliases": { "en": "Backend Engineer", "zh": "后端工程师", "ja": "Backend Engineer", "fr": "Backend Engineer", "es": "Backend Engineer", "de": "Backend Engineer" }
+  },
+  {
+    "key": "business_analyst",
+    "aliases": { "en": "Business Analyst", "zh": "业务分析师", "ja": "Business Analyst", "fr": "Business Analyst", "es": "Business Analyst", "de": "Business Analyst" }
+  },
+  {
+    "key": "business_development_manager",
+    "aliases": { "en": "Business Development Manager", "zh": "商务拓展经理", "ja": "Business Development Manager", "fr": "Business Development Manager", "es": "Business Development Manager", "de": "Business Development Manager" }
+  },
+  {
+    "key": "category_manager",
+    "aliases": { "en": "Category Manager", "zh": "品类经理", "ja": "Category Manager", "fr": "Category Manager", "es": "Category Manager", "de": "Category Manager" }
+  },
+  {
+    "key": "chief_executive_officer",
+    "aliases": { "en": "Chief Executive Officer", "zh": "首席执行官", "ja": "Chief Executive Officer", "fr": "Chief Executive Officer", "es": "Chief Executive Officer", "de": "Chief Executive Officer" }
+  },
+  {
+    "key": "chief_financial_officer",
+    "aliases": { "en": "Chief Financial Officer", "zh": "首席财务官", "ja": "Chief Financial Officer", "fr": "Chief Financial Officer", "es": "Chief Financial Officer", "de": "Chief Financial Officer" }
+  },
+  {
+    "key": "chief_marketing_officer",
+    "aliases": { "en": "Chief Marketing Officer", "zh": "首席营销官", "ja": "Chief Marketing Officer", "fr": "Chief Marketing Officer", "es": "Chief Marketing Officer", "de": "Chief Marketing Officer" }
+  },
+  {
+    "key": "chief_operating_officer",
+    "aliases": { "en": "Chief Operating Officer", "zh": "首席运营官", "ja": "Chief Operating Officer", "fr": "Chief Operating Officer", "es": "Chief Operating Officer", "de": "Chief Operating Officer" }
+  },
+  {
+    "key": "chief_product_officer",
+    "aliases": { "en": "Chief Product Officer", "zh": "首席产品官", "ja": "Chief Product Officer", "fr": "Chief Product Officer", "es": "Chief Product Officer", "de": "Chief Product Officer" }
+  },
+  {
+    "key": "chief_technology_officer",
+    "aliases": { "en": "Chief Technology Officer", "zh": "首席技术官", "ja": "Chief Technology Officer", "fr": "Chief Technology Officer", "es": "Chief Technology Officer", "de": "Chief Technology Officer" }
+  },
+  {
+    "key": "civil_engineer",
+    "aliases": { "en": "Civil Engineer", "zh": "土木工程师", "ja": "Civil Engineer", "fr": "Civil Engineer", "es": "Civil Engineer", "de": "Civil Engineer" }
+  },
+  {
+    "key": "cloud_engineer",
+    "aliases": { "en": "Cloud Engineer", "zh": "云工程师", "ja": "Cloud Engineer", "fr": "Cloud Engineer", "es": "Cloud Engineer", "de": "Cloud Engineer" }
+  },
+  {
+    "key": "code_reviewer",
+    "aliases": { "en": "Code Reviewer", "zh": "代码审查员", "ja": "Code Reviewer", "fr": "Code Reviewer", "es": "Code Reviewer", "de": "Code Reviewer" }
+  },
+  {
+    "key": "community_manager",
+    "aliases": { "en": "Community Manager", "zh": "社区运营经理", "ja": "Community Manager", "fr": "Community Manager", "es": "Community Manager", "de": "Community Manager" }
+  },
+  {
+    "key": "compliance_officer",
+    "aliases": { "en": "Compliance Officer", "zh": "合规专员", "ja": "Compliance Officer", "fr": "Compliance Officer", "es": "Compliance Officer", "de": "Compliance Officer" }
+  },
+  {
+    "key": "content_editor",
+    "aliases": { "en": "Content Editor", "zh": "内容编辑", "ja": "Content Editor", "fr": "Content Editor", "es": "Content Editor", "de": "Content Editor" }
+  },
+  {
+    "key": "content_marketing_manager",
+    "aliases": { "en": "Content Marketing Manager", "zh": "内容营销经理", "ja": "Content Marketing Manager", "fr": "Content Marketing Manager", "es": "Content Marketing Manager", "de": "Content Marketing Manager" }
+  },
+  {
+    "key": "copywriter",
+    "aliases": { "en": "Copywriter", "zh": "文案策划", "ja": "Copywriter", "fr": "Copywriter", "es": "Copywriter", "de": "Copywriter" }
+  },
+  {
+    "key": "customer_service_representative",
+    "aliases": { "en": "Customer Service Representative", "zh": "客服代表", "ja": "Customer Service Representative", "fr": "Customer Service Representative", "es": "Customer Service Representative", "de": "Customer Service Representative" }
+  },
+  {
+    "key": "customer_success_manager",
+    "aliases": { "en": "Customer Success Manager", "zh": "客户成功经理", "ja": "Customer Success Manager", "fr": "Customer Success Manager", "es": "Customer Success Manager", "de": "Customer Success Manager" }
+  },
+  {
+    "key": "cybersecurity_engineer",
+    "aliases": { "en": "Cybersecurity Engineer", "zh": "网络安全工程师", "ja": "Cybersecurity Engineer", "fr": "Cybersecurity Engineer", "es": "Cybersecurity Engineer", "de": "Cybersecurity Engineer" }
+  },
+  {
+    "key": "data_analyst",
+    "aliases": { "en": "Data Analyst", "zh": "数据分析师", "ja": "Data Analyst", "fr": "Data Analyst", "es": "Data Analyst", "de": "Data Analyst" }
+  },
+  {
+    "key": "data_engineer",
+    "aliases": { "en": "Data Engineer", "zh": "数据工程师", "ja": "Data Engineer", "fr": "Data Engineer", "es": "Data Engineer", "de": "Data Engineer" }
+  },
+  {
+    "key": "data_scientist",
+    "aliases": { "en": "Data Scientist", "zh": "数据科学家", "ja": "Data Scientist", "fr": "Data Scientist", "es": "Data Scientist", "de": "Data Scientist" }
+  },
+  {
+    "key": "database_administrator",
+    "aliases": { "en": "Database Administrator", "zh": "数据库管理员", "ja": "Database Administrator", "fr": "Database Administrator", "es": "Database Administrator", "de": "Database Administrator" }
+  },
+  {
+    "key": "delivery_manager",
+    "aliases": { "en": "Delivery Manager", "zh": "交付经理", "ja": "Delivery Manager", "fr": "Delivery Manager", "es": "Delivery Manager", "de": "Delivery Manager" }
+  },
+  {
+    "key": "demand_planner",
+    "aliases": { "en": "Demand Planner", "zh": "需求计划经理", "ja": "Demand Planner", "fr": "Demand Planner", "es": "Demand Planner", "de": "Demand Planner" }
+  },
+  {
+    "key": "devops_engineer",
+    "aliases": { "en": "DevOps Engineer", "zh": "DevOps工程师", "ja": "DevOps Engineer", "fr": "DevOps Engineer", "es": "DevOps Engineer", "de": "DevOps Engineer" }
+  },
+  {
+    "key": "digital_marketing_manager",
+    "aliases": { "en": "Digital Marketing Manager", "zh": "数字营销经理", "ja": "Digital Marketing Manager", "fr": "Digital Marketing Manager", "es": "Digital Marketing Manager", "de": "Digital Marketing Manager" }
+  },
+  {
+    "key": "doctor",
+    "aliases": { "en": "Doctor", "zh": "医生", "ja": "Doctor", "fr": "Doctor", "es": "Doctor", "de": "Doctor" }
+  },
+  {
+    "key": "electrical_engineer",
+    "aliases": { "en": "Electrical Engineer", "zh": "电气工程师", "ja": "Electrical Engineer", "fr": "Electrical Engineer", "es": "Electrical Engineer", "de": "Electrical Engineer" }
+  },
+  {
+    "key": "embedded_engineer",
+    "aliases": { "en": "Embedded Engineer", "zh": "嵌入式工程师", "ja": "Embedded Engineer", "fr": "Embedded Engineer", "es": "Embedded Engineer", "de": "Embedded Engineer" }
+  },
+  {
+    "key": "enterprise_architect",
+    "aliases": { "en": "Enterprise Architect", "zh": "企业架构师", "ja": "Enterprise Architect", "fr": "Enterprise Architect", "es": "Enterprise Architect", "de": "Enterprise Architect" }
+  },
+  {
+    "key": "event_manager",
+    "aliases": { "en": "Event Manager", "zh": "活动策划经理", "ja": "Event Manager", "fr": "Event Manager", "es": "Event Manager", "de": "Event Manager" }
+  },
+  {
+    "key": "finance_manager",
+    "aliases": { "en": "Finance Manager", "zh": "财务经理", "ja": "Finance Manager", "fr": "Finance Manager", "es": "Finance Manager", "de": "Finance Manager" }
+  },
+  {
+    "key": "financial_analyst",
+    "aliases": { "en": "Financial Analyst", "zh": "金融分析师", "ja": "Financial Analyst", "fr": "Financial Analyst", "es": "Financial Analyst", "de": "Financial Analyst" }
+  },
+  {
+    "key": "frontend_engineer",
+    "aliases": { "en": "Frontend Engineer", "zh": "前端工程师", "ja": "Frontend Engineer", "fr": "Frontend Engineer", "es": "Frontend Engineer", "de": "Frontend Engineer" }
+  },
+  {
+    "key": "full_stack_engineer",
+    "aliases": { "en": "Full Stack Engineer", "zh": "全栈工程师", "ja": "Full Stack Engineer", "fr": "Full Stack Engineer", "es": "Full Stack Engineer", "de": "Full Stack Engineer" }
+  },
+  {
+    "key": "game_designer",
+    "aliases": { "en": "Game Designer", "zh": "游戏设计师", "ja": "Game Designer", "fr": "Game Designer", "es": "Game Designer", "de": "Game Designer" }
+  },
+  {
+    "key": "graphic_designer",
+    "aliases": { "en": "Graphic Designer", "zh": "平面设计师", "ja": "Graphic Designer", "fr": "Graphic Designer", "es": "Graphic Designer", "de": "Graphic Designer" }
+  },
+  {
+    "key": "hr_business_partner",
+    "aliases": { "en": "HR Business Partner", "zh": "人力资源业务伙伴", "ja": "HR Business Partner", "fr": "HR Business Partner", "es": "HR Business Partner", "de": "HR Business Partner" }
+  },
+  {
+    "key": "hr_manager",
+    "aliases": { "en": "HR Manager", "zh": "人力资源经理", "ja": "HR Manager", "fr": "HR Manager", "es": "HR Manager", "de": "HR Manager" }
+  },
+  {
+    "key": "inside_sales_representative",
+    "aliases": { "en": "Inside Sales Representative", "zh": "内部销售代表", "ja": "Inside Sales Representative", "fr": "Inside Sales Representative", "es": "Inside Sales Representative", "de": "Inside Sales Representative" }
+  },
+  {
+    "key": "ios_engineer",
+    "aliases": { "en": "iOS Engineer", "zh": "iOS工程师", "ja": "iOS Engineer", "fr": "iOS Engineer", "es": "iOS Engineer", "de": "iOS Engineer" }
+  },
+  {
+    "key": "it_support_engineer",
+    "aliases": { "en": "IT Support Engineer", "zh": "IT支持工程师", "ja": "IT Support Engineer", "fr": "IT Support Engineer", "es": "IT Support Engineer", "de": "IT Support Engineer" }
+  },
+  {
+    "key": "legal_counsel",
+    "aliases": { "en": "Legal Counsel", "zh": "法务顾问", "ja": "Legal Counsel", "fr": "Legal Counsel", "es": "Legal Counsel", "de": "Legal Counsel" }
+  },
+  {
+    "key": "logistics_manager",
+    "aliases": { "en": "Logistics Manager", "zh": "物流经理", "ja": "Logistics Manager", "fr": "Logistics Manager", "es": "Logistics Manager", "de": "Logistics Manager" }
+  },
+  {
+    "key": "machine_learning_engineer",
+    "aliases": { "en": "Machine Learning Engineer", "zh": "机器学习工程师", "ja": "Machine Learning Engineer", "fr": "Machine Learning Engineer", "es": "Machine Learning Engineer", "de": "Machine Learning Engineer" }
+  },
+  {
+    "key": "maintenance_engineer",
+    "aliases": { "en": "Maintenance Engineer", "zh": "维护工程师", "ja": "Maintenance Engineer", "fr": "Maintenance Engineer", "es": "Maintenance Engineer", "de": "Maintenance Engineer" }
+  },
+  {
+    "key": "manufacturing_engineer",
+    "aliases": { "en": "Manufacturing Engineer", "zh": "制造工程师", "ja": "Manufacturing Engineer", "fr": "Manufacturing Engineer", "es": "Manufacturing Engineer", "de": "Manufacturing Engineer" }
+  },
+  {
+    "key": "marketing_manager",
+    "aliases": { "en": "Marketing Manager", "zh": "市场经理", "ja": "Marketing Manager", "fr": "Marketing Manager", "es": "Marketing Manager", "de": "Marketing Manager" }
+  },
+  {
+    "key": "mechanical_engineer",
+    "aliases": { "en": "Mechanical Engineer", "zh": "机械工程师", "ja": "Mechanical Engineer", "fr": "Mechanical Engineer", "es": "Mechanical Engineer", "de": "Mechanical Engineer" }
+  },
+  {
+    "key": "mobile_engineer",
+    "aliases": { "en": "Mobile Engineer", "zh": "移动端工程师", "ja": "Mobile Engineer", "fr": "Mobile Engineer", "es": "Mobile Engineer", "de": "Mobile Engineer" }
+  },
+  {
+    "key": "network_engineer",
+    "aliases": { "en": "Network Engineer", "zh": "网络工程师", "ja": "Network Engineer", "fr": "Network Engineer", "es": "Network Engineer", "de": "Network Engineer" }
+  },
+  {
+    "key": "office_manager",
+    "aliases": { "en": "Office Manager", "zh": "办公室经理", "ja": "Office Manager", "fr": "Office Manager", "es": "Office Manager", "de": "Office Manager" }
+  },
+  {
+    "key": "operations_manager",
+    "aliases": { "en": "Operations Manager", "zh": "运营经理", "ja": "Operations Manager", "fr": "Operations Manager", "es": "Operations Manager", "de": "Operations Manager" }
+  },
+  {
+    "key": "partner_manager",
+    "aliases": { "en": "Partner Manager", "zh": "生态合作经理", "ja": "Partner Manager", "fr": "Partner Manager", "es": "Partner Manager", "de": "Partner Manager" }
+  },
+  {
+    "key": "pharmacist",
+    "aliases": { "en": "Pharmacist", "zh": "药剂师", "ja": "Pharmacist", "fr": "Pharmacist", "es": "Pharmacist", "de": "Pharmacist" }
+  },
+  {
+    "key": "platform_engineer",
+    "aliases": { "en": "Platform Engineer", "zh": "平台工程师", "ja": "Platform Engineer", "fr": "Platform Engineer", "es": "Platform Engineer", "de": "Platform Engineer" }
+  },
+  {
+    "key": "presales_engineer",
+    "aliases": { "en": "Pre-sales Engineer", "zh": "售前工程师", "ja": "Pre-sales Engineer", "fr": "Pre-sales Engineer", "es": "Pre-sales Engineer", "de": "Pre-sales Engineer" }
+  },
+  {
+    "key": "procurement_manager",
+    "aliases": { "en": "Procurement Manager", "zh": "采购经理", "ja": "Procurement Manager", "fr": "Procurement Manager", "es": "Procurement Manager", "de": "Procurement Manager" }
+  },
+  {
+    "key": "product_designer",
+    "aliases": { "en": "Product Designer", "zh": "产品设计师", "ja": "Product Designer", "fr": "Product Designer", "es": "Product Designer", "de": "Product Designer" }
+  },
+  {
+    "key": "product_manager",
+    "aliases": { "en": "Product Manager", "zh": "产品经理", "ja": "Product Manager", "fr": "Product Manager", "es": "Product Manager", "de": "Product Manager" }
+  },
+  {
+    "key": "product_marketing_manager",
+    "aliases": { "en": "Product Marketing Manager", "zh": "产品营销经理", "ja": "Product Marketing Manager", "fr": "Product Marketing Manager", "es": "Product Marketing Manager", "de": "Product Marketing Manager" }
+  },
+  {
+    "key": "program_manager",
+    "aliases": { "en": "Program Manager", "zh": "项目群经理", "ja": "Program Manager", "fr": "Program Manager", "es": "Program Manager", "de": "Program Manager" }
+  },
+  {
+    "key": "project_manager",
+    "aliases": { "en": "Project Manager", "zh": "项目经理", "ja": "Project Manager", "fr": "Project Manager", "es": "Project Manager", "de": "Project Manager" }
+  },
+  {
+    "key": "qa_engineer",
+    "aliases": { "en": "QA Engineer", "zh": "质量测试工程师", "ja": "QA Engineer", "fr": "QA Engineer", "es": "QA Engineer", "de": "QA Engineer" }
+  },
+  {
+    "key": "quality_assurance_manager",
+    "aliases": { "en": "Quality Assurance Manager", "zh": "质量保证经理", "ja": "Quality Assurance Manager", "fr": "Quality Assurance Manager", "es": "Quality Assurance Manager", "de": "Quality Assurance Manager" }
+  },
+  {
+    "key": "recruiter",
+    "aliases": { "en": "Recruiter", "zh": "招聘专员", "ja": "Recruiter", "fr": "Recruiter", "es": "Recruiter", "de": "Recruiter" }
+  },
+  {
+    "key": "registered_nurse",
+    "aliases": { "en": "Registered Nurse", "zh": "注册护士", "ja": "Registered Nurse", "fr": "Registered Nurse", "es": "Registered Nurse", "de": "Registered Nurse" }
+  },
+  {
+    "key": "research_scientist",
+    "aliases": { "en": "Research Scientist", "zh": "研究科学家", "ja": "Research Scientist", "fr": "Research Scientist", "es": "Research Scientist", "de": "Research Scientist" }
+  },
+  {
+    "key": "risk_manager",
+    "aliases": { "en": "Risk Manager", "zh": "风险经理", "ja": "Risk Manager", "fr": "Risk Manager", "es": "Risk Manager", "de": "Risk Manager" }
+  },
+  {
+    "key": "sales_director",
+    "aliases": { "en": "Sales Director", "zh": "销售总监", "ja": "Sales Director", "fr": "Sales Director", "es": "Sales Director", "de": "Sales Director" }
+  },
+  {
+    "key": "sales_manager",
+    "aliases": { "en": "Sales Manager", "zh": "销售经理", "ja": "Sales Manager", "fr": "Sales Manager", "es": "Sales Manager", "de": "Sales Manager" }
+  },
+  {
+    "key": "sales_operations_manager",
+    "aliases": { "en": "Sales Operations Manager", "zh": "销售运营经理", "ja": "Sales Operations Manager", "fr": "Sales Operations Manager", "es": "Sales Operations Manager", "de": "Sales Operations Manager" }
+  },
+  {
+    "key": "scrum_master",
+    "aliases": { "en": "Scrum Master", "zh": "敏捷教练", "ja": "Scrum Master", "fr": "Scrum Master", "es": "Scrum Master", "de": "Scrum Master" }
+  },
+  {
+    "key": "secretary",
+    "aliases": { "en": "Secretary", "zh": "秘书", "ja": "Secretary", "fr": "Secretary", "es": "Secretary", "de": "Secretary" }
+  },
+  {
+    "key": "security_analyst",
+    "aliases": { "en": "Security Analyst", "zh": "安全分析师", "ja": "Security Analyst", "fr": "Security Analyst", "es": "Security Analyst", "de": "Security Analyst" }
+  },
+  {
+    "key": "site_reliability_engineer",
+    "aliases": { "en": "Site Reliability Engineer", "zh": "站点可靠性工程师", "ja": "Site Reliability Engineer", "fr": "Site Reliability Engineer", "es": "Site Reliability Engineer", "de": "Site Reliability Engineer" }
+  },
+  {
+    "key": "social_media_manager",
+    "aliases": { "en": "Social Media Manager", "zh": "社交媒体运营经理", "ja": "Social Media Manager", "fr": "Social Media Manager", "es": "Social Media Manager", "de": "Social Media Manager" }
+  },
+  {
+    "key": "software_engineer",
+    "aliases": { "en": "Software Engineer", "zh": "软件工程师", "ja": "Software Engineer", "fr": "Software Engineer", "es": "Software Engineer", "de": "Software Engineer" }
+  },
+  {
+    "key": "solutions_architect",
+    "aliases": { "en": "Solutions Architect", "zh": "解决方案架构师", "ja": "Solutions Architect", "fr": "Solutions Architect", "es": "Solutions Architect", "de": "Solutions Architect" }
+  },
+  {
+    "key": "sourcing_manager",
+    "aliases": { "en": "Sourcing Manager", "zh": "寻源经理", "ja": "Sourcing Manager", "fr": "Sourcing Manager", "es": "Sourcing Manager", "de": "Sourcing Manager" }
+  },
+  {
+    "key": "supply_chain_manager",
+    "aliases": { "en": "Supply Chain Manager", "zh": "供应链经理", "ja": "Supply Chain Manager", "fr": "Supply Chain Manager", "es": "Supply Chain Manager", "de": "Supply Chain Manager" }
+  },
+  {
+    "key": "systems_analyst",
+    "aliases": { "en": "Systems Analyst", "zh": "系统分析师", "ja": "Systems Analyst", "fr": "Systems Analyst", "es": "Systems Analyst", "de": "Systems Analyst" }
+  },
+  {
+    "key": "systems_engineer",
+    "aliases": { "en": "Systems Engineer", "zh": "系统工程师", "ja": "Systems Engineer", "fr": "Systems Engineer", "es": "Systems Engineer", "de": "Systems Engineer" }
+  },
+  {
+    "key": "tax_manager",
+    "aliases": { "en": "Tax Manager", "zh": "税务经理", "ja": "Tax Manager", "fr": "Tax Manager", "es": "Tax Manager", "de": "Tax Manager" }
+  },
+  {
+    "key": "teacher",
+    "aliases": { "en": "Teacher", "zh": "教师", "ja": "Teacher", "fr": "Teacher", "es": "Teacher", "de": "Teacher" }
+  },
+  {
+    "key": "technical_account_manager",
+    "aliases": { "en": "Technical Account Manager", "zh": "技术客户经理", "ja": "Technical Account Manager", "fr": "Technical Account Manager", "es": "Technical Account Manager", "de": "Technical Account Manager" }
+  },
+  {
+    "key": "technical_program_manager",
+    "aliases": { "en": "Technical Program Manager", "zh": "技术项目群经理", "ja": "Technical Program Manager", "fr": "Technical Program Manager", "es": "Technical Program Manager", "de": "Technical Program Manager" }
+  },
+  {
+    "key": "technical_support_engineer",
+    "aliases": { "en": "Technical Support Engineer", "zh": "技术支持工程师", "ja": "Technical Support Engineer", "fr": "Technical Support Engineer", "es": "Technical Support Engineer", "de": "Technical Support Engineer" }
+  },
+  {
+    "key": "test_engineer",
+    "aliases": { "en": "Test Engineer", "zh": "测试工程师", "ja": "Test Engineer", "fr": "Test Engineer", "es": "Test Engineer", "de": "Test Engineer" }
+  },
+  {
+    "key": "ui_designer",
+    "aliases": { "en": "UI Designer", "zh": "UI设计师", "ja": "UI Designer", "fr": "UI Designer", "es": "UI Designer", "de": "UI Designer" }
+  },
+  {
+    "key": "ui_ux_designer",
+    "aliases": { "en": "UI/UX Designer", "zh": "UI/UX设计师", "ja": "UI/UX Designer", "fr": "UI/UX Designer", "es": "UI/UX Designer", "de": "UI/UX Designer" }
+  },
+  {
+    "key": "ux_designer",
+    "aliases": { "en": "UX Designer", "zh": "UX设计师", "ja": "UX Designer", "fr": "UX Designer", "es": "UX Designer", "de": "UX Designer" }
+  },
+  {
+    "key": "video_editor",
+    "aliases": { "en": "Video Editor", "zh": "视频剪辑师", "ja": "Video Editor", "fr": "Video Editor", "es": "Video Editor", "de": "Video Editor" }
+  },
+  {
+    "key": "warehouse_manager",
+    "aliases": { "en": "Warehouse Manager", "zh": "仓库经理", "ja": "Warehouse Manager", "fr": "Warehouse Manager", "es": "Warehouse Manager", "de": "Warehouse Manager" }
+  },
+  {
+    "key": "web_designer",
+    "aliases": { "en": "Web Designer", "zh": "网页设计师", "ja": "Web Designer", "fr": "Web Designer", "es": "Web Designer", "de": "Web Designer" }
+  }
+]
