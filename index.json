@@ -1,6 +1,6 @@
 {
   "schema": "openstaff.template-index.v1",
-  "generatedAtUtc": "2026-04-22T18:03:39.5619537Z",
+  "generatedAtUtc": "2026-04-22T18:04:40.3914715Z",
   "templateCount": 5,
   "templates": [
     {
@@ -186,7 +186,7 @@
     {
       "file": "yuan.role.json",
       "id": "25BD5A37-F4DC-46E9-A98B-E3FDF761921D",
-      "name": "yuan",
+      "name": "Yuan",
       "avatar": "https://cdn.open-hub.cc/agents/yuan.png",
       "job": "code_reviewer",
       "jobTitleKey": "code_reviewer",
