@@ -1,0 +1,58 @@
+$ErrorActionPreference = "Stop"
+
+$repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+$templatesDir = Join-Path $repoRoot "templates"
+$outputPath = Join-Path $repoRoot "index.json"
+
+if (-not (Test-Path -LiteralPath $templatesDir)) {
+    throw "Templates directory not found: $templatesDir"
+}
+
+$templateFiles = Get-ChildItem -LiteralPath $templatesDir -Filter "*.role.json" | Sort-Object Name
+
+$templates = foreach ($file in $templateFiles) {
+    $template = Get-Content -LiteralPath $file.FullName -Raw | ConvertFrom-Json -Depth 100
+
+    $styleValues = @()
+    if ($null -ne $template.soul) {
+        if ($template.soul.style -is [string]) {
+            $styleValues = @([string]$template.soul.style)
+        } else {
+            $styleValues = @($template.soul.style)
+        }
+    }
+
+    [PSCustomObject]@{
+        file = $file.Name
+        id = $template.id
+        name = $template.name
+        jobTitle = $template.jobTitle
+        description = $template.description
+        model = $template.model
+        source = $template.source
+        isBuiltin = $template.isBuiltin
+        isActive = $template.isActive
+        mcpCount = @($template.mcps).Count
+        skillCount = @($template.skills).Count
+        mcpKeys = @($template.mcps | ForEach-Object { $_.key } | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
+        skillKeys = @($template.skills | ForEach-Object { $_.key } | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
+        soul = [PSCustomObject]@{
+            traits = @($template.soul.traits)
+            attitudes = @($template.soul.attitudes)
+            style = $styleValues
+            custom = $template.soul.custom
+        }
+    }
+}
+
+$index = [PSCustomObject]@{
+    schema = "openstaff.template-index.v1"
+    generatedAtUtc = (Get-Date).ToUniversalTime().ToString("o")
+    templateCount = @($templates).Count
+    templates = @($templates)
+}
+
+$json = $index | ConvertTo-Json -Depth 100
+Set-Content -LiteralPath $outputPath -Value $json -Encoding utf8NoBOM
+
+Write-Host "Generated index: $outputPath (templates: $($index.templateCount))"
