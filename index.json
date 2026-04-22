@@ -1,95 +1,8 @@
 {
   "schema": "openstaff.template-index.v1",
-  "generatedAtUtc": "2026-04-22T16:02:51.3957868Z",
+  "generatedAtUtc": "2026-04-22T16:10:33.8000815Z",
   "templateCount": 5,
   "templates": [
-    {
-      "file": "菲菲.role.json",
-      "id": "8F81392B-286C-4EA3-B89C-0A49DCF3261B",
-      "name": "菲菲",
-      "job": "graphic_designer",
-      "jobTitleKey": "graphic_designer",
-      "jobTitle": "Graphic Designer",
-      "description": "Creates visual assets and design materials with a focus on clarity, consistency, and quality.",
-      "model": "openai/gpt-oss-120b",
-      "source": "custom",
-      "isBuiltin": false,
-      "isActive": true,
-      "mcpCount": 2,
-      "skillCount": 5,
-      "mcpKeys": [
-        "fetch",
-        "filesystem"
-      ],
-      "skillKeys": [
-        "anthropics/skills:canvas-design",
-        "anthropics/skills:frontend-design",
-        "anthropics/skills:pdf",
-        "anthropics/skills:pptx",
-        "vercel-labs/agent-skills:web-design-guidelines"
-      ],
-      "soul": {
-        "traits": [
-          "analytical",
-          "open_minded",
-          "independent",
-          "patient",
-          "resilient"
-        ],
-        "attitudes": [
-          "detail_oriented",
-          "strategic",
-          "quality_focused",
-          "optimistic"
-        ],
-        "style": [
-          "expressive"
-        ],
-        "custom": null
-      }
-    },
-    {
-      "file": "圆圆.role.json",
-      "id": "25BD5A37-F4DC-46E9-A98B-E3FDF761921D",
-      "name": "圆圆",
-      "job": "code_reviewer",
-      "jobTitleKey": "code_reviewer",
-      "jobTitle": "Code Reviewer",
-      "description": "Excels at identifying code defects, explaining issues clearly, and proposing practical fixes.",
-      "model": "glm-4.5-air",
-      "source": "custom",
-      "isBuiltin": false,
-      "isActive": true,
-      "mcpCount": 3,
-      "skillCount": 1,
-      "mcpKeys": [
-        "fetch",
-        "filesystem",
-        "shell"
-      ],
-      "skillKeys": [
-        "anthropics/skills:pdf"
-      ],
-      "soul": {
-        "traits": [
-          "analytical",
-          "creative",
-          "empathetic",
-          "open_minded"
-        ],
-        "attitudes": [
-          "innovative",
-          "strategic",
-          "disciplined",
-          "quality_focused",
-          "proactive"
-        ],
-        "style": [
-          "persuasive"
-        ],
-        "custom": null
-      }
-    },
     {
       "file": "jennifer.role.json",
       "id": "8C41D395-CCE9-4ADF-B11B-56161B8F9474",
@@ -217,6 +130,93 @@
         ],
         "style": [
           "articulate"
+        ],
+        "custom": null
+      }
+    },
+    {
+      "file": "圆圆.role.json",
+      "id": "25BD5A37-F4DC-46E9-A98B-E3FDF761921D",
+      "name": "圆圆",
+      "job": "code_reviewer",
+      "jobTitleKey": "code_reviewer",
+      "jobTitle": "Code Reviewer",
+      "description": "Excels at identifying code defects, explaining issues clearly, and proposing practical fixes.",
+      "model": "glm-4.5-air",
+      "source": "custom",
+      "isBuiltin": false,
+      "isActive": true,
+      "mcpCount": 3,
+      "skillCount": 1,
+      "mcpKeys": [
+        "fetch",
+        "filesystem",
+        "shell"
+      ],
+      "skillKeys": [
+        "anthropics/skills:pdf"
+      ],
+      "soul": {
+        "traits": [
+          "analytical",
+          "creative",
+          "empathetic",
+          "open_minded"
+        ],
+        "attitudes": [
+          "innovative",
+          "strategic",
+          "disciplined",
+          "quality_focused",
+          "proactive"
+        ],
+        "style": [
+          "persuasive"
+        ],
+        "custom": null
+      }
+    },
+    {
+      "file": "菲菲.role.json",
+      "id": "8F81392B-286C-4EA3-B89C-0A49DCF3261B",
+      "name": "菲菲",
+      "job": "graphic_designer",
+      "jobTitleKey": "graphic_designer",
+      "jobTitle": "Graphic Designer",
+      "description": "Creates visual assets and design materials with a focus on clarity, consistency, and quality.",
+      "model": "openai/gpt-oss-120b",
+      "source": "custom",
+      "isBuiltin": false,
+      "isActive": true,
+      "mcpCount": 2,
+      "skillCount": 5,
+      "mcpKeys": [
+        "fetch",
+        "filesystem"
+      ],
+      "skillKeys": [
+        "anthropics/skills:canvas-design",
+        "anthropics/skills:frontend-design",
+        "anthropics/skills:pdf",
+        "anthropics/skills:pptx",
+        "vercel-labs/agent-skills:web-design-guidelines"
+      ],
+      "soul": {
+        "traits": [
+          "analytical",
+          "open_minded",
+          "independent",
+          "patient",
+          "resilient"
+        ],
+        "attitudes": [
+          "detail_oriented",
+          "strategic",
+          "quality_focused",
+          "optimistic"
+        ],
+        "style": [
+          "expressive"
         ],
         "custom": null
       }
