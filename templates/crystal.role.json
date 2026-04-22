@@ -2,7 +2,7 @@
   "schema": "openstaff.role-sync.v2",
   "notes": "Exported from the current application database. MCPs and skills are key-only references.",
   "id": "8F81392B-286C-4EA3-B89C-0A49DCF3261B",
-  "name": "crystal",
+  "name": "Crystal",
   "job": "graphic_designer",
   "description": "Creates visual assets and design materials with a focus on clarity, consistency, and quality.",
   "avatar": "https://cdn.open-hub.cc/agents/crystal.png",
