@@ -1,12 +1,12 @@
 {
   "schema": "openstaff.template-index.v1",
-  "generatedAtUtc": "2026-04-22T17:13:32.4317270Z",
+  "generatedAtUtc": "2026-04-22T18:03:39.5619537Z",
   "templateCount": 5,
   "templates": [
     {
       "file": "crystal.role.json",
       "id": "8F81392B-286C-4EA3-B89C-0A49DCF3261B",
-      "name": "crystal",
+      "name": "Crystal",
       "avatar": "https://cdn.open-hub.cc/agents/crystal.png",
       "job": "graphic_designer",
       "jobTitleKey": "graphic_designer",
