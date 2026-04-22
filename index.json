@@ -1,12 +1,59 @@
 {
   "schema": "openstaff.template-index.v1",
-  "generatedAtUtc": "2026-04-22T16:10:33.8000815Z",
+  "generatedAtUtc": "2026-04-22T17:13:32.4317270Z",
   "templateCount": 5,
   "templates": [
+    {
+      "file": "crystal.role.json",
+      "id": "8F81392B-286C-4EA3-B89C-0A49DCF3261B",
+      "name": "crystal",
+      "avatar": "https://cdn.open-hub.cc/agents/crystal.png",
+      "job": "graphic_designer",
+      "jobTitleKey": "graphic_designer",
+      "jobTitle": "Graphic Designer",
+      "description": "Creates visual assets and design materials with a focus on clarity, consistency, and quality.",
+      "model": "openai/gpt-oss-120b",
+      "source": "custom",
+      "isBuiltin": false,
+      "isActive": true,
+      "mcpCount": 2,
+      "skillCount": 5,
+      "mcpKeys": [
+        "fetch",
+        "filesystem"
+      ],
+      "skillKeys": [
+        "anthropics/skills:canvas-design",
+        "anthropics/skills:frontend-design",
+        "anthropics/skills:pdf",
+        "anthropics/skills:pptx",
+        "vercel-labs/agent-skills:web-design-guidelines"
+      ],
+      "soul": {
+        "traits": [
+          "analytical",
+          "open_minded",
+          "independent",
+          "patient",
+          "resilient"
+        ],
+        "attitudes": [
+          "detail_oriented",
+          "strategic",
+          "quality_focused",
+          "optimistic"
+        ],
+        "style": [
+          "expressive"
+        ],
+        "custom": null
+      }
+    },
     {
       "file": "jennifer.role.json",
       "id": "8C41D395-CCE9-4ADF-B11B-56161B8F9474",
       "name": "Jennifer",
+      "avatar": "https://cdn.open-hub.cc/agents/jennifer.png",
       "job": "software_engineer",
       "jobTitleKey": "software_engineer",
       "jobTitle": "Software Engineer",
@@ -50,6 +97,7 @@
       "file": "monica.role.json",
       "id": "AC2E24E3-69D9-4112-9FF5-F59A2877A624",
       "name": "Monica",
+      "avatar": "https://cdn.open-hub.cc/agents/monica.png",
       "job": "secretary",
       "jobTitleKey": "secretary",
       "jobTitle": "Secretary",
@@ -99,6 +147,7 @@
       "file": "sophie.role.json",
       "id": "4810B17F-6635-4C19-920A-7B80D78C5151",
       "name": "Sophie",
+      "avatar": "https://cdn.open-hub.cc/agents/sophie.png",
       "job": "backend_engineer",
       "jobTitleKey": "backend_engineer",
       "jobTitle": "Backend Engineer",
@@ -135,9 +184,10 @@
       }
     },
     {
-      "file": "圆圆.role.json",
+      "file": "yuan.role.json",
       "id": "25BD5A37-F4DC-46E9-A98B-E3FDF761921D",
-      "name": "圆圆",
+      "name": "yuan",
+      "avatar": "https://cdn.open-hub.cc/agents/yuan.png",
       "job": "code_reviewer",
       "jobTitleKey": "code_reviewer",
       "jobTitle": "Code Reviewer",
@@ -172,51 +222,6 @@
         ],
         "style": [
           "persuasive"
-        ],
-        "custom": null
-      }
-    },
-    {
-      "file": "菲菲.role.json",
-      "id": "8F81392B-286C-4EA3-B89C-0A49DCF3261B",
-      "name": "菲菲",
-      "job": "graphic_designer",
-      "jobTitleKey": "graphic_designer",
-      "jobTitle": "Graphic Designer",
-      "description": "Creates visual assets and design materials with a focus on clarity, consistency, and quality.",
-      "model": "openai/gpt-oss-120b",
-      "source": "custom",
-      "isBuiltin": false,
-      "isActive": true,
-      "mcpCount": 2,
-      "skillCount": 5,
-      "mcpKeys": [
-        "fetch",
-        "filesystem"
-      ],
-      "skillKeys": [
-        "anthropics/skills:canvas-design",
-        "anthropics/skills:frontend-design",
-        "anthropics/skills:pdf",
-        "anthropics/skills:pptx",
-        "vercel-labs/agent-skills:web-design-guidelines"
-      ],
-      "soul": {
-        "traits": [
-          "analytical",
-          "open_minded",
-          "independent",
-          "patient",
-          "resilient"
-        ],
-        "attitudes": [
-          "detail_oriented",
-          "strategic",
-          "quality_focused",
-          "optimistic"
-        ],
-        "style": [
-          "expressive"
         ],
         "custom": null
       }
