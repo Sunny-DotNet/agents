@@ -1,0 +1,24 @@
+name: Validate Templates
+
+on:
+  push:
+    paths:
+      - "templates/**"
+      - "scripts/validate-templates.ps1"
+      - ".github/workflows/validate-templates.yml"
+  pull_request:
+    paths:
+      - "templates/**"
+      - "scripts/validate-templates.ps1"
+      - ".github/workflows/validate-templates.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate templates
+        shell: pwsh
+        run: ./scripts/validate-templates.ps1
