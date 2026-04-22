@@ -37,10 +37,19 @@ $templates = foreach ($file in $templateFiles) {
         }
     }
 
+    $avatar = $null
+    if ($null -ne $template.avatar -and -not [string]::IsNullOrWhiteSpace($template.avatar)) {
+        $avatarStr = [string]$template.avatar
+        if ($avatarStr -notmatch '^data:') {
+            $avatar = $avatarStr
+        }
+    }
+
     [PSCustomObject]@{
         file = $file.Name
         id = $template.id
         name = $template.name
+        avatar = $avatar
         job = $template.job
         jobTitleKey = $template.job
         jobTitle = $(if ($jobTitleMap.ContainsKey([string]$template.job)) { $jobTitleMap[[string]$template.job] } else { $null })
